@@ -12,6 +12,7 @@
   <form (submit)='addHobby(hobby.value)'>
     <label><strong>Add Hobby</strong></label>
     <input type='text' #hobby /> <br/>
+    <button (click)="addHobbies('abc')" type="button" name="button">Submit</button>
   </form>
   </div>
   <button (click)='toggleHobbies()'>{{showHobbies ? 'Hide Hobbies' : 'Show Hobbies'}}</button>

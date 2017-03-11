@@ -37,23 +37,24 @@ export class UserComponent {
     this.showHobbies = !this.showHobbies;
   }
 
-  addHobbies(newHobby){
+  addHobbies(newHobby:string){
     console.log('adding new hobby');
+    alert('testing');
     this.hobbies.push(newHobby);
   }
 
-  deleteHobby(i){
+  deleteHobby(i:number){
     this.hobbies.splice(i,1);
   }
-  interface address {
-    street: string;
-    city: string;
-  }
+}
 
-  interface post{
-    id: number;
-    title: string;
-    body: string;
-  }
+interface address{
+  street: string;
+  city: string;
+}
 
+interface post{
+  id: number;
+  title: string;
+  body: string;
 }
